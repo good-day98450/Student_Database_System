@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academix</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <h1>🎓 Academix</h1>
+            <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+            <button onclick="window.location.href='profile.html'">Profile Setting</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <!-- Welcome Section -->
+        <section class="welcome">
+            <h2>Welcome to the Student Management Dashboard</h2>
+            <p>Manage students, teachers, exams, reports, and more — all from one place.
+                Use the quick links below to access different sections.</p>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="links">
+                <a href="course.html" class="card">📘 Courses</a>
+                <a href="reports.html" class="card">📊 Reports</a>
+                <a href="examination.html" class="card">🗓️ Examination Date</a>
+                <a href="fee.html" class="card">💰 Fee Reciept</a>
+                <a href="attendance.html" class="card">🧾 Attendence Record</a>
+                <a href="notice.html" class="card">🧾 Notice Board</a>
+
+            </div>
+        </section>
+
+        <!-- Notifications / Announcements -->
+        <section class="notifications">
+            <h2>📢 Notifications / Announcements</h2>
+
+            <form id="notificationForm">
+                <input type="text" id="noteTitle" placeholder="Enter notification title" required>
+                <textarea id="noteMessage" placeholder="Enter message..." required></textarea>
+                <!-- <button type="submit">Post Notification</button> -->
+            </form>
+
+            <div id="notificationList" class="note-list"></div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Student Management System | Designed by Sakshi Kumari</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

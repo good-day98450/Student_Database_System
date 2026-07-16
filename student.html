@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Database System</title>
+  <link rel="stylesheet" href="/css/student.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>🎓 Student Database Management System</header>
+  <div class="container">
+    <h2>Add / Update Student</h2>
+    <form id="studentForm">
+      <input type="hidden" id="editIndex">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="text" id="contact" placeholder="Contact Number" required>
+      <select id="course" required>
+        <option value="">Select Course</option>
+        <option>BCA</option>
+        <option>B.Tech</option>
+        <option>MCA</option>
+        <option>B.Sc</option>
+        <option>BBA</option>
+      </select>
+      <input type="file" id="photo" accept="image/*">
+
+      <button type="submit">Save Student</button>
+    </form>
+
+    <div class="student-list">
+      <h2>Student List</h2>
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Search by name, course, or email...">
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Photo</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Contact</th>
+            <th>Course</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="/js/student.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Additional Features | Student Management System</title>
+  <link rel="stylesheet" href="/css/notice.css">
+</head>
+<body>
+  <div class="container">
+    <h1>✨ Additional Features</h1>
+
+    <!-- 🔔 Notice Board -->
+    <section class="feature-section">
+      <h2>📢 Notice Board / Announcements</h2>
+      <form id="noticeForm">
+        <input type="text" id="noticeTitle" placeholder="Notice Title" required>
+        <textarea id="noticeContent" placeholder="Enter notice content..." required></textarea>
+        <button type="submit">Post Notice</button>
+      </form>
+
+      <div id="noticeBoard" class="board"></div>
+    </section>
+
+    <!-- 📄 Downloadable Documents -->
+    <section class="feature-section">
+      <h2>📄 Downloadable Documents</h2>
+      <ul id="documentList">
+        <li><a href="/files/BCA 3RD SEM (Sec G).pdf" target="_blank" rel="noopener noreferrer">📘 BCA 3rd Sem. Syllabus (PDF)</a></li>
+        <li><a href="/files/Assignment 1 .pdf" target="_blank">📝 Assignment 1</a></li>
+        <li><a href="/files/Project front-page.pdf" target="_blank">📦 Project Resources</a></li>
+      </ul>
+    </section>
+
+    <!-- ☎️ Contact / Help Section -->
+    <section class="feature-section">
+      <h2>☎️ Contact / Help Desk</h2>
+      <form id="contactForm">
+        <input type="text" id="contactName" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+        <textarea id="contactMsg" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p id="contactResponse"></p>
+    </section>
+  </div>
+
+  <script src="/js/notice.js"></script>
+</body>
+</html>

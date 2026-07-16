@@ -1,0 +1,149 @@
+/* General layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f8ff;
+  color: #333;
+}
+
+header {
+  background: #d400ff;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome h2 {
+  color: #00ccff;
+  margin-bottom: 10px;
+}
+
+/* Quick Links */
+.quick-links {
+  margin-bottom: 40px;
+}
+
+.quick-links h2 {
+  color: #0400ff;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.card {
+  background: #eef5ff;
+  color: #0044ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  width: 180px;
+  margin: 10px;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+  background: #c300ff;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Notifications */
+.notifications {
+  background: #eef5ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.notifications h2 {
+  color: #8400ff;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  height: 70px;
+}
+
+button {
+  background: #008cff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #8900b3;
+}
+
+/* Notification List */
+.note-list {
+  margin-top: 15px;
+}
+
+.note {
+  background: white;
+  border-left: 5px solid #00b7ff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.note h3 {
+  margin: 0;
+  color: #00c3ff;
+}
+
+.note p {
+  margin: 5px 0;
+  color: #333;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  background: #cc00ff;
+  color: white;
+}

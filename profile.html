@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Student DBMS</title>
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>Profile Settings</h2>
+    <form id="profileForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="emailProfile" placeholder="Email" readonly>
+      <input type="password" id="newPassword" placeholder="New Password (optional)">
+      <button type="submit">Save Changes</button>
+    </form>
+    <button onclick="backToDashboard()">Back to Dashboard</button>
+  </div>
+  <script src="/js/login.js"></script>
+</body>
+</html>

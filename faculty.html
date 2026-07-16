@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty / Teacher Management</title>
+  <link rel="stylesheet" href="/css/faculty.css">
+</head>
+<body>
+  <div class="container">
+    <h1>👩‍🏫 Faculty / Teacher Management</h1>
+
+    <!-- Add Teacher Form -->
+    <section class="form-section">
+      <h2>Add New Teacher</h2>
+      <form id="teacherForm">
+        <input type="text" id="teacherName" placeholder="Full Name" required>
+        <input type="text" id="teacherSubject" placeholder="Subject / Course" required>
+        <input type="text" id="teacherContact" placeholder="Contact (Email / Phone)" required>
+        <input type="text" id="teacherClass" placeholder="Assigned Class / Course" required>
+        <button type="submit">Add Teacher</button>
+      </form>
+    </section>
+
+    <!-- Teacher List -->
+    <section class="list-section">
+      <h2>👨‍🏫 Teacher List</h2>
+      <input type="text" id="searchTeacher" placeholder="Search by name or subject...">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Contact</th>
+            <th>Assigned Class</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="teacherTableBody"></tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="/js/faculty.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f2f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color:white;
+  background: #b30086;
+  
+}
+h2 {
+  background: #2600ff;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  background: #2600ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #6b00b3;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+
+th {
+  background: #b30086;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+#searchBox {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+#reportCards {
+  margin-top: 30px;
+  background: #eef5ff;
+  padding: 20px;
+  border-radius: 8px;
+}

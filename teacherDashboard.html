@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher's Dashboard</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Welcome Section -->
+    <section class="welcome">
+      <h2>Welcome to Teacher's Dashboard</h2>
+      <p>Manage students, teachers, exams, reports, and more — all from one place.
+        Use the quick links below to access different sections.</p>
+      <button class="logout-btn" onclick="window.location.href='login.html'">Logout</button>
+      <button onclick="window.location.href='profile.html'">Profile Setting</button>
+    </section>
+
+    <!-- Quick Links Section -->
+    <section class="quick-links">
+      <h2>Quick Links</h2>
+      <div class="links">
+        <a href="student.html" class="card">👩‍🎓 Students</a>
+        <a href="course.html" class="card">📘 Courses</a>
+        <a href="faculty.html" class="card">👩‍🏫 Teachers</a>
+        <a href="reports.html" class="card">📊 Reports</a>
+        <a href="examination.html" class="card">🗓️ Examination Date</a>
+        <a href="notice.html" class="card">🧾 Notice Board</a>
+
+      </div>
+    </section>
+
+    <!-- Notifications / Announcements -->
+    <section class="notifications">
+      <h2>📢 Notifications / Announcements</h2>
+
+      <form id="notificationForm">
+        <input type="text" id="noteTitle" placeholder="Enter notification title" required>
+        <textarea id="noteMessage" placeholder="Enter message..." required></textarea>
+        <button type="submit">Post Notification</button>
+      </form>
+
+      <div id="notificationList" class="note-list"></div>
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Student Management System | Designed by Sakshi Kumari</p>
+  </footer>
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

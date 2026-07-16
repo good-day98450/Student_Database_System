@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Examination & Marks Management</title>
+  <link rel="stylesheet" href="/css/examination.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Examination & Marks Management System</h1>
+
+    <!-- Add Exam Details Form -->
+    <form id="examForm">
+      <h2>Add Exam Details</h2>
+      <input type="text" id="studentName" placeholder="Student Name" required>
+      <input type="text" id="subject" placeholder="Subject" required>
+      <input type="date" id="examDate" required>
+      <input type="number" id="marks" placeholder="Marks (0 - 100)" min="0" max="100" required>
+      <button type="submit">➕ Add Exam</button>
+    </form>
+
+    <!-- Search -->
+    <input type="text" id="searchBox" placeholder="🔍 Search by student name..." />
+
+    <!-- Table -->
+    <table id="examTable">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Subject</th>
+          <th>Date</th>
+          <th>Marks</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody  id="tbody"></tbody>
+    </table>
+
+    <!-- Generate Report Card -->
+    <button id="generateReportBtn">📄 Generate Report Cards</button>
+
+    <div id="reportCards"></div>
+  </div>
+
+  <script src="/js/examination.js"></script>
+</body>
+</html>

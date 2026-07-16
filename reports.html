@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reports & Analytics | Student Management System</title>
+  <link rel="stylesheet" href="/css/reports.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Reports & Analytics Dashboard</h1>
+
+    <div class="report-section">
+      <h2>👩‍🎓 Student List Report</h2>
+      <button onclick="generateStudentReport()">Generate Report</button>
+      <div id="studentReport" class="report-box"></div>
+    </div>
+
+    <div class="report-section">
+      <h2>📅 Attendance Report</h2>
+      <button onclick="generateAttendanceReport()">Generate Report</button>
+      <div id="attendanceReport" class="report-box"></div>
+    </div>
+
+    <div class="report-section">
+      <h2>🎓 Academic Performance Report</h2>
+      <button onclick="generatePerformanceReport()">Generate Report</button>
+      <div id="performanceReport" class="report-box"></div>
+    </div>
+
+    <div class="report-section">
+      <h2>💰 Fee Collection Report</h2>
+      <button onclick="generateFeeReport()">Generate Report</button>
+      <div id="feeReport" class="report-box"></div>
+    </div>
+  </div>
+
+  <script src="/js/reports.js"></script>
+</body>
+</html>

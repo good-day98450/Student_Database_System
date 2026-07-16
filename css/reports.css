@@ -1,0 +1,70 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f3f7ff;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background: white;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  background: #b30086;
+  margin-bottom: 40px;
+}
+
+.report-section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #007bff;
+}
+
+button {
+  background: #2600ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #7a00b3;
+}
+
+.report-box {
+  margin-top: 15px;
+  background: #eef5ff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dce7ff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
